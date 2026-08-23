@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yahia &amp; — · 20.11.2026</title>
+<meta name="description" content="Counting down to 20 November 2026.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏮</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Cairo:wght@400;600;900&display=swap" rel="stylesheet">
+
+<style>
+/* ─────────────────  TOKENS  ───────────────── */
+:root{
+  --night:   #1B0B2E;
+  --night-2: #2E0F4A;
+  --rose:    #FF4D8D;
+  --gold:    #FFC145;
+  --teal:    #2AD6C6;
+  --coral:   #FF7A59;
+  --cream:   #FFF3E2;
+
+  --display: 'Yeseva One', Georgia, serif;
+  --body:    'Cairo', system-ui, sans-serif;
+
+  --cord: 34px;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0 }
+
+html,body{ min-height:100% }
+
+body{
+  font-family:var(--body);
+  color:var(--cream);
+  background:
+    radial-gradient(120% 80% at 15% 0%,  rgba(255,77,141,.30), transparent 60%),
+    radial-gradient(110% 75% at 85% 5%,  rgba(42,214,198,.22), transparent 60%),
+    radial-gradient(130% 90% at 50% 110%,rgba(255,193,69,.20), transparent 60%),
+    linear-gradient(170deg, var(--night-2), var(--night) 55%, #12061F);
+  background-attachment:fixed;
+  overflow-x:hidden;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:clamp(28px,6vw,64px) 20px 56px;
+  text-align:center;
+}
+
+/* ─────────────────  FESTOON WIRE  ───────────────── */
+.festoon{ position:fixed; inset:0 0 auto 0; height:80px; pointer-events:none; z-index:0 }
+.festoon svg{ width:100%; height:100% }
+.bulb{ animation:twinkle 3.2s ease-in-out infinite }
+@keyframes twinkle{ 0%,100%{opacity:.35} 50%{opacity:1} }
+
+/* ─────────────────  HERO  ───────────────── */
+main{ position:relative; z-index:1; width:100%; max-width:960px }
+
+.eyebrow{
+  font-size:clamp(11px,2.6vw,13px);
+  font-weight:600;
+  letter-spacing:.34em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:clamp(18px,4vw,26px);
+}
+
+.names{
+  font-family:var(--display);
+  font-size:clamp(42px,11vw,92px);
+  line-height:1.05;
+  background:linear-gradient(100deg,var(--gold),var(--cream) 40%,var(--rose));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+  padding:0 .06em .12em;
+}
+
+.ar-line{
+  font-size:clamp(18px,4.4vw,26px);
+  font-weight:600;
+  color:rgba(255,243,226,.72);
+  margin-top:10px;
+  direction:rtl;
+}
+
+/* ─────────────────  LANTERNS  ───────────────── */
+.lanterns{
+  position:relative;
+  margin:calc(var(--cord) + 46px) auto 0;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:clamp(10px,2.4vw,22px);
+  max-width:820px;
+}
+.lanterns::before{                    /* the wire they all hang from */
+  content:"";
+  position:absolute;
+  top:calc(-1 * var(--cord));
+  left:4%; right:4%;
+  height:2px;
+  background:linear-gradient(90deg,transparent,rgba(255,193,69,.55) 12%,rgba(255,193,69,.55) 88%,transparent);
+  border-radius:50%;
+}
+
+.lantern{
+  position:relative;
+  padding:clamp(16px,3.6vw,28px) 6px clamp(14px,3vw,22px);
+  border-radius:16px 16px 22px 22px;
+  transform-origin:top center;
+  animation:sway 5s ease-in-out infinite alternate;
+  border:1px solid rgba(255,243,226,.16);
+}
+.lantern::before{                     /* cord */
+  content:"";
+  position:absolute;
+  top:calc(-1 * var(--cord)); left:50%;
+  width:1px; height:var(--cord);
+  background:rgba(255,193,69,.55);
+}
+.lantern:nth-child(1){ background:linear-gradient(165deg,#FF4D8D,#B21E5C); box-shadow:0 0 44px rgba(255,77,141,.42) }
+.lantern:nth-child(2){ background:linear-gradient(165deg,#FFC145,#C4791A); box-shadow:0 0 44px rgba(255,193,69,.42); animation-delay:-1.2s }
+.lantern:nth-child(3){ background:linear-gradient(165deg,#2AD6C6,#12867E); box-shadow:0 0 44px rgba(42,214,198,.40); animation-delay:-2.4s }
+.lantern:nth-child(4){ background:linear-gradient(165deg,#FF7A59,#C2412A); box-shadow:0 0 44px rgba(255,122,89,.42); animation-delay:-3.6s }
+
+@keyframes sway{ from{transform:rotate(-2.2deg)} to{transform:rotate(2.2deg)} }
+
+.num{
+  font-size:clamp(30px,9vw,62px);
+  font-weight:900;
+  line-height:1;
+  font-variant-numeric:tabular-nums;
+  color:#fff;
+  text-shadow:0 3px 14px rgba(0,0,0,.35);
+}
+.unit{
+  display:block;
+  margin-top:8px;
+  font-size:clamp(9px,2.1vw,11px);
+  font-weight:600;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.9);
+}
+.unit-ar{ display:block; font-size:clamp(11px,2.4vw,13px); letter-spacing:0; opacity:.8; direction:rtl }
+
+/* ─────────────────  STATS  ───────────────── */
+.stats{
+  margin:clamp(38px,7vw,58px) auto 0;
+  display:flex; flex-wrap:wrap; justify-content:center;
+  gap:clamp(14px,4vw,44px);
+}
+.stat{ min-width:96px }
+.stat b{ display:block; font-family:var(--display); font-size:clamp(22px,5vw,32px); color:var(--gold) }
+.stat span{ font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,243,226,.55) }
+
+footer{
+  margin-top:clamp(38px,7vw,60px);
+  font-size:13px;
+  color:rgba(255,243,226,.45);
+  letter-spacing:.05em;
+}
+footer .heart{ color:var(--rose) }
+
+/* ─────────────────  DAY-OF STATE  ───────────────── */
+.mabrouk{
+  font-family:var(--display);
+  font-size:clamp(38px,10vw,80px);
+  color:var(--gold);
+  direction:rtl;
+  padding:40px 0;
+}
+
+/* ─────────────────  PETALS  ───────────────── */
+.petal{
+  position:fixed; top:-6vh;
+  width:11px; height:11px;
+  border-radius:50% 0 50% 0;
+  opacity:.75;
+  pointer-events:none;
+  z-index:0;
+  animation:fall linear infinite;
+}
+@keyframes fall{
+  0%   { transform:translateY(-10vh) translateX(0) rotate(0deg) }
+  100% { transform:translateY(112vh) translateX(60px) rotate(540deg) }
+}
+
+/* ─────────────────  A11Y  ───────────────── */
+:focus-visible{ outline:2px solid var(--gold); outline-offset:4px; border-radius:6px }
+
+@media (prefers-reduced-motion:reduce){
+  .lantern,.petal,.bulb{ animation:none !important }
+  .petal{ display:none }
+}
+
+@media (max-width:520px){
+  .lanterns{ grid-template-columns:repeat(2,1fr); row-gap:calc(var(--cord) + 28px) }
+  .lanterns::before{ display:none }
+  .lantern::before{ display:none }
+}
+</style>
+</head>
+
+<body>
+
+<div class="festoon" aria-hidden="true">
+  <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+    <path d="M0,8 Q300,74 600,30 T1200,8" fill="none" stroke="rgba(255,193,69,.45)" stroke-width="2"/>
+    <g>
+      <circle class="bulb" cx="150"  cy="42" r="6" fill="#FF4D8D" style="animation-delay:0s"/>
+      <circle class="bulb" cx="300"  cy="52" r="6" fill="#FFC145" style="animation-delay:.4s"/>
+      <circle class="bulb" cx="450"  cy="50" r="6" fill="#2AD6C6" style="animation-delay:.8s"/>
+      <circle class="bulb" cx="600"  cy="40" r="6" fill="#FF7A59" style="animation-delay:1.2s"/>
+      <circle class="bulb" cx="750"  cy="32" r="6" fill="#FF4D8D" style="animation-delay:1.6s"/>
+      <circle class="bulb" cx="900"  cy="24" r="6" fill="#FFC145" style="animation-delay:2s"/>
+      <circle class="bulb" cx="1050" cy="14" r="6" fill="#2AD6C6" style="animation-delay:2.4s"/>
+    </g>
+  </svg>
+</div>
+
+<main>
+  <p class="eyebrow" id="eyebrow">20 November 2026 · Cairo</p>
+
+  <h1 class="names" id="names">Yahia &amp; —</h1>
+  <p class="ar-line" id="tagline">فاضل على الفرح</p>
+
+  <section class="lanterns" id="lanterns" aria-live="polite" aria-label="Time remaining">
+    <div class="lantern"><span class="num" id="d">--</span><span class="unit">Days<em class="unit-ar">يوم</em></span></div>
+    <div class="lantern"><span class="num" id="h">--</span><span class="unit">Hours<em class="unit-ar">ساعة</em></span></div>
+    <div class="lantern"><span class="num" id="m">--</span><span class="unit">Minutes<em class="unit-ar">دقيقة</em></span></div>
+    <div class="lantern"><span class="num" id="s">--</span><span class="unit">Seconds<em class="unit-ar">ثانية</em></span></div>
+  </section>
+
+  <section class="stats" id="stats">
+    <div class="stat"><b id="weeks">--</b><span>Weeks</span></div>
+    <div class="stat"><b id="fridays">--</b><span>Fridays</span></div>
+    <div class="stat"><b id="hours">--</b><span>Hours total</span></div>
+  </section>
+
+  <footer>Made with <span class="heart">&#10084;</span> · counting in Cairo time</footer>
+</main>
+
+<script>
+/* ═══════════════  EDIT THESE THREE LINES  ═══════════════ */
+const CONFIG = {
+  coupleNames : "Yahia & —",                  // ← اكتب اسمها هنا
+  weddingDate : "2026-11-20T18:00:00+02:00",  // Cairo time (UTC+2 in November)
+  tagline     : "فاضل على الفرح"
+};
+/* ═══════════════════════════════════════════════════════ */
+
+const target = new Date(CONFIG.weddingDate);
+document.getElementById("names").textContent   = CONFIG.coupleNames;
+document.getElementById("tagline").textContent = CONFIG.tagline;
+document.title = CONFIG.coupleNames + " · 20.11.2026";
+
+document.getElementById("eyebrow").textContent =
+  target.toLocaleDateString("en-GB", {
+    weekday:"long", day:"numeric", month:"long", year:"numeric", timeZone:"Africa/Cairo"
+  }).toUpperCase() + " · CAIRO";
+
+const pad = n => String(n).padStart(2, "0");
+
+function countFridays(from, to){
+  let n = 0;
+  const cur = new Date(from);
+  cur.setHours(0,0,0,0);
+  while (cur <= to){
+    if (cur.getDay() === 5) n++;
+    cur.setDate(cur.getDate() + 1);
+  }
+  return n;
+}
+
+function tick(){
+  const diff = target - new Date();
+
+  if (diff <= 0){
+    document.getElementById("lanterns").outerHTML =
+      '<p class="mabrouk">ألف مبروك 🎉</p>';
+    document.getElementById("stats").remove();
+    clearInterval(timer);
+    burst();
+    return;
+  }
+
+  const sec  = Math.floor(diff / 1000);
+  const days = Math.floor(sec / 86400);
+
+  document.getElementById("d").textContent = days;
+  document.getElementById("h").textContent = pad(Math.floor(sec / 3600) % 24);
+  document.getElementById("m").textContent = pad(Math.floor(sec / 60) % 60);
+  document.getElementById("s").textContent = pad(sec % 60);
+
+  document.getElementById("weeks").textContent   = Math.floor(days / 7);
+  document.getElementById("fridays").textContent = countFridays(new Date(), target);
+  document.getElementById("hours").textContent   = Math.floor(sec / 3600).toLocaleString("en-US");
+}
+
+tick();
+const timer = setInterval(tick, 1000);
+
+/* ambient petals */
+const colors = ["#FF4D8D", "#FFC145", "#2AD6C6", "#FF7A59", "#FFF3E2"];
+if (!matchMedia("(prefers-reduced-motion: reduce)").matches){
+  for (let i = 0; i < 18; i++){
+    const p = document.createElement("span");
+    p.className = "petal";
+    p.style.left            = Math.random() * 100 + "vw";
+    p.style.background      = colors[i % colors.length];
+    p.style.animationDuration = (9 + Math.random() * 9) + "s";
+    p.style.animationDelay    = (-Math.random() * 14) + "s";
+    p.style.transform       = `scale(${0.6 + Math.random()})`;
+    document.body.appendChild(p);
+  }
+}
+
+/* confetti burst on the day itself */
+function burst(){
+  for (let i = 0; i < 90; i++){
+    const c = document.createElement("span");
+    c.className = "petal";
+    c.style.left              = Math.random() * 100 + "vw";
+    c.style.background        = colors[i % colors.length];
+    c.style.animationDuration = (2.5 + Math.random() * 3) + "s";
+    c.style.animationDelay    = (Math.random() * 2) + "s";
+    document.body.appendChild(c);
+  }
+}
+</script>
+</body>
+</html>
